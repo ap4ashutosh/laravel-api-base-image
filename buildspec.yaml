@@ -1,0 +1,27 @@
+version: 0.2
+
+        
+phases:
+  install:
+    run-as: Linux-user-name
+    on-failure: ABORT
+    runtime-versions:
+      php: 8.2
+    commands:
+      - echo "install"
+    # steps:
+  pre_build:
+    on-failure: ABORT
+    commands:
+      - echo "install"
+
+    # steps:
+  build:
+    on-failure: ABORT
+    commands:
+      -echo "build"
+  post_build:
+    on-failure: ABORT
+    commands:
+      -echo "post build"
+    # steps:
